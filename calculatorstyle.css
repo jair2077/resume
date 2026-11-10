@@ -1,0 +1,206 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Manrope', sans-serif;
+    background: #0b0d12;
+    color: #f5f5f7;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.header {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 28px 24px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 28px;
+    font-weight: 800;
+    color: white;
+    text-decoration: none;
+}
+
+.logo span {
+    color: #9b8cff;
+}
+
+.back-link {
+    color: #a1a1aa;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.back-link:hover {
+    color: #9b8cff;
+}
+
+.main {
+    flex: 1;
+    padding: 60px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.intro {
+    text-align: center;
+    max-width: 600px;
+    margin-bottom: 40px;
+}
+
+.label {
+    color: #9b8cff;
+    font-size: 12px;
+    font-weight: 800;
+    letter-spacing: 3px;
+    margin-bottom: 16px;
+}
+
+.intro h1 {
+    font-size: clamp(32px, 5vw, 48px);
+    margin-bottom: 16px;
+}
+
+.intro h1 span {
+    color: #9b8cff;
+}
+
+.intro p:last-child {
+    color: #a1a1aa;
+    line-height: 1.7;
+}
+
+.calculator {
+    width: 100%;
+    max-width: 360px;
+    padding: 20px;
+    background: #141720;
+    border: 1px solid #252936;
+    border-radius: 24px;
+    box-shadow: 0 25px 70px rgba(0, 0, 0, 0.35);
+}
+
+.display {
+    min-height: 125px;
+    padding: 20px 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-end;
+    overflow: hidden;
+}
+
+.expression {
+    color: #777d8d;
+    font-size: 16px;
+    min-height: 24px;
+    word-break: break-all;
+}
+
+.screen {
+    font-size: 42px;
+    font-weight: 700;
+    max-width: 100%;
+    overflow-wrap: anywhere;
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+
+.btn {
+    height: 65px;
+    border: none;
+    border-radius: 16px;
+    background: #202531;
+    color: #f5f5f7;
+    font-size: 20px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.2s, transform 0.2s;
+}
+
+.btn:hover {
+    background: #2b3140;
+}
+
+.btn:active {
+    transform: scale(0.95);
+}
+
+.function {
+    background: #29263b;
+    color: #b6aaff;
+}
+
+.function:hover {
+    background: #37314f;
+}
+
+.operator {
+    background: #302a50;
+    color: #b6aaff;
+}
+
+.operator:hover {
+    background: #41366b;
+}
+
+.equals {
+    background: #9b8cff;
+    color: #0b0d12;
+}
+
+.equals:hover {
+    background: #b0a4ff;
+}
+
+.zero {
+    grid-column: span 2;
+}
+
+.footer {
+    padding: 25px 20px;
+    text-align: center;
+    color: #656b79;
+    font-size: 13px;
+    line-height: 2;
+}
+
+@media (max-width: 420px) {
+    .main {
+        padding: 35px 15px;
+    }
+
+    .calculator {
+        padding: 15px;
+    }
+
+    .btn {
+        height: 58px;
+        border-radius: 13px;
+    }
+
+    .screen {
+        font-size: 34px;
+    }
+
+    .header {
+        padding: 20px;
+    }
+}

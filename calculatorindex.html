@@ -1,0 +1,72 @@
+
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Калькулятор | Ярослав Лупаков</title>
+    <link rel="stylesheet" href="calculatorstyle.css">
+</head>
+<body>
+
+    <header class="header">
+        <a href="index.html" class="logo">
+            YL<span>.</span>
+        </a>
+
+        <a href="index.html" class="back-link">
+            ← Вернуться на сайт
+        </a>
+    </header>
+
+    <main class="main">
+        <div class="intro">
+            <p class="label">MY PROJECT</p>
+            <h1>JavaScript <span>Calculator</span></h1>
+            <p>Простой и удобный калькулятор с поддержкой основных операций.</p>
+        </div>
+
+        <div class="calculator">
+
+            <div class="display">
+                <div class="expression" id="expression"></div>
+                <div class="screen" id="screen">0</div>
+            </div>
+
+            <div class="buttons">
+                <button class="btn function" data-action="clear">AC</button>
+                <button class="btn function" data-action="delete">DEL</button>
+                <button class="btn function" data-action="percent">%</button>
+                <button class="btn operator" data-value="/">÷</button>
+
+                <button class="btn" data-value="7">7</button>
+                <button class="btn" data-value="8">8</button>
+                <button class="btn" data-value="9">9</button>
+                <button class="btn operator" data-value="*">×</button>
+
+                <button class="btn" data-value="4">4</button>
+                <button class="btn" data-value="5">5</button>
+                <button class="btn" data-value="6">6</button>
+                <button class="btn operator" data-value="-">−</button>
+
+                <button class="btn" data-value="1">1</button>
+                <button class="btn" data-value="2">2</button>
+                <button class="btn" data-value="3">3</button>
+                <button class="btn operator" data-value="+">+</button>
+
+                <button class="btn zero" data-value="0">0</button>
+                <button class="btn" data-action="dot">.</button>
+                <button class="btn equals" data-action="equals">=</button>
+            </div>
+
+        </div>
+    </main>
+
+    <footer class="footer">
+        <p>© 2026 Ярослав Лупаков</p>
+        <p>Made with HTML, CSS & JavaScript</p>
+    </footer>
+
+    <script src="calculatorscript.js"></script>
+</body>
+</html>
